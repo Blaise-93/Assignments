@@ -1,0 +1,22 @@
+{% extends 'musicapp/base.html'%}
+
+{% block content %}
+<main>
+	<div class="container-fluid ">
+	<section class="my-3 px-3"  style="background-color:#eee;">
+    <a href="{% url 'musicapp:album-list' %}">Go back to Artiste Menu</a>
+	<hr/>
+	<h1>This is the details of {{ album.first_name }} {{ album.last_name }} </h1> 
+    <p>This artist age is {{ album.age }} and his song is {{ artiste.song }}</p>
+	<p>The song by this artiste is: 
+		<ul>
+			<li>{{ album.song }}</li>
+		</ul>
+	</p>
+	<a href="/albums/{{album.pk}}/update">Update</a>
+	<a href="/albums/{{album.pk}}/delete">Delete</a>
+</div>
+</section>
+</main>
+{% endblock content %}
+

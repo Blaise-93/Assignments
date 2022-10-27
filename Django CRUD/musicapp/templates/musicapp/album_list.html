@@ -1,0 +1,19 @@
+{% extends 'musicapp/base.html' %}
+
+{% block content %}
+<main>
+	<div class="container-fluid ">
+		<section class="my-3 px-3"  style="background-color:#eee;">
+			<a href="{% url 'musicapp:album-create' %}">Create a new album</a>
+			<hr>
+			<h1>This is all our artist portfolio</h1>  
+			{% for artist_info in album %} 
+				<div class="album"> 
+					<a href="/albums/{{ artist_info.pk }}/">{{artist_info.first_name }} {{artist_info.last_name }}</a>. Age: {{artist_info.age}}	
+				</div>
+				{% endfor %}
+		</section>
+	</div>
+</main>
+
+{% endblock content %}
