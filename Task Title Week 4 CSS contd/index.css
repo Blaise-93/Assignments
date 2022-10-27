@@ -1,0 +1,185 @@
+*{
+    box-sizing: border-box;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  
+  }
+  
+  /* CSS NAV */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+  }
+  
+  
+  
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: rgb(213, 227, 188, 0.1);
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover {
+      background-color: rgb(14, 55, 77, 0.9);
+    }
+  
+    .nav-list {
+      width: 70%;
+      display: flex;
+  }
+  
+  .nav-list li {
+  
+      list-style: none;
+      padding: 2px 6px;
+  }
+  
+  .nav-list li a {
+  
+      text-decoration: none;
+      font-family: 'Times New Roman', Times, serif;
+      color: steelblue;
+  }
+  
+  .nav-list li a:hover {
+      color: grey;
+  }
+  
+  /* CSS BODY/SECTIONS */
+  
+  
+  
+  @import url(https://fonts.google.com/specimen/Big+Shoulders);
+  @import url(https://fonts.google.com/specimen/Lexand+Deca);
+  
+  body{
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 16px;
+    width: 100%;
+    min-height: 100vh;
+    max-height: 100vh
+  }
+  
+  .main {
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .main-container{
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    
+    
+  }
+  
+  .container{
+    
+    width: 269px;
+    padding: 15px;
+   /* margin-left: 20px; */
+    min-height: 430px;
+  }
+  
+  .sedan-container{
+    
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+  }
+  
+  .suv-container{
+    
+    background-color: hsl(184, 100%, 22%);
+    
+  
+  }
+  
+  .luxury-container{
+    
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+  }
+  
+  .content{
+    padding: 10px;
+  }
+  
+  h1{
+    color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 20px;
+    text-transform: uppercase;
+    
+  } 
+  
+  p{
+    color: hsla(0, 0%, 100%, 0.75);
+    padding-top: 15px;
+    font-family: 'Big Shoulders Display', cursive;
+  }
+  
+  .btn{
+    margin-top: 60px;
+    padding: 40px, 16px;
+    border: 0;
+    border-radius: 30px;
+    outline: none;
+    background-color: #FFF;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 700;
+  }
+  
+  .sedan-btn{
+    color:hsl(31, 77%, 52%);
+  }
+  
+  .suv-btn{
+     color: hsl(184, 100%, 22%);
+  }
+  
+  .luxury-btn{
+     color:hsl(179, 100%, 13%);
+  }
+  
+  .btn:hover{
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    transition: 0.3s;
+    
+  }
+  
+  button:focus{
+    box-shadow: 0 0 5px yellow;
+  
